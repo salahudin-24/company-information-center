@@ -44,5 +44,22 @@
             "email_work" : "xiadre@company.co.id",
             "address" : "Hongkong, China"
         }
+    ],
+    "procedures" : [
+        {
+            "id" : "1",
+            "title" : "Permintaan uang transportasi",
+            "content" : "Bawa nota pembelian BBM yang sah ke bagian keuangan. Uang penggantian dikirim ke rekening bersama gaji"
+        },
+        {
+            "id" : "2",
+            "title" : "Permohonan cuti regular",
+            "content" : "Buat surat cuti yang berisi alasan lalu kirim ke email admin"
+        },
+        {
+            "id" : "3",
+            "title" : "Permohonan cuti hamil",
+            "content" : "Buat surat cuti yang berisi alasan beserta surat dari dokter / bidan lalu kirim ke email admin"
+        }
     ]
 }

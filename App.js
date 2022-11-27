@@ -1,8 +1,11 @@
-import ListScreen from "./pages/ListScreen";
+import ContactDetail from "./pages/ContactDetail";
 import AboutScreen from "./pages/AboutScreen";
-import DetailScreen from "./pages/DetailScreen";
+import Contact from "./pages/Contact";
+import Procedure from "./pages/Procedure";
+import ProcedureDetail from "./pages/ProcedureDetail";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Icon } from "@fortawesome/fontawesome-svg-core";
 
 import "react-native-gesture-handler";
 
@@ -13,9 +16,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <BottomTab.Navigator>
-        <BottomTab.Screen name="List" component={ListScreen} />
-        <BottomTab.Screen name="About" component={AboutScreen} />
-        <BottomTab.Screen name="Detail" component={DetailScreen} options={{ tabBarButton: () => null }}/>
+        <BottomTab.Screen name="Contact" component={Contact} />
+        <BottomTab.Screen name="Contact Detail" component={ContactDetail} options={{ tabBarButton: () => null }} />
+        <BottomTab.Screen name="Procedure" component={Procedure} />
+        <BottomTab.Screen name="Procedure Detail" component={ProcedureDetail} options={{ tabBarButton: () => null }}/>
+        <BottomTab.Screen name="About Developer" component={AboutScreen} />
       </BottomTab.Navigator>
     </NavigationContainer>
   );

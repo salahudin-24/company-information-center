@@ -3,7 +3,7 @@ import { View, Text, Image, FlatList, StyleSheet, Linking } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import colors from "../config/colors";
 
-function ListScreen() {
+function ContactDetail() {
     const [data, setData] = useState([]);
     const route = useRoute();
     const url = "http://192.168.198.188:3000/employees?email_work="+route.params.email_work;
@@ -99,4 +99,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ListScreen;
+export default ContactDetail;

@@ -3,9 +3,9 @@ import { View, Text, Image, FlatList, StyleSheet, TouchableNativeFeedback } from
 import { useNavigation } from "@react-navigation/native";
 import colors from "../config/colors";
 
-const url = "http://192.168.198.188:3000/employees";
+const url = "http://192.168.198.188:3000/procedures";
 
-function ListScreen() {
+function Contact() {
     const [data, setData] = useState([]);
     const navigation=useNavigation();
     
@@ -21,17 +21,14 @@ function ListScreen() {
     
   const ListItemNama = (dataPassing) => {
     return (
-      <TouchableNativeFeedback onPress={() => navigation.navigate("Detail",{email_work : dataPassing.employees.email_work})}>
+      <TouchableNativeFeedback onPress={() => navigation.navigate("Procedure Detail",{procedure_id : dataPassing.procedure.id})}>
         <View style={styles.ItemListContainer}>
           <View>
             <View style={styles.itemListLine} />
           </View>
           <View style={styles.itemListContent}>
             <Text style={styles.itemListText}>
-              {"Nama : " + dataPassing.employees.name}
-            </Text>
-            <Text style={styles.itemListText}>
-              {"Divisi : " + dataPassing.employees.division}
+              {dataPassing.procedure.title}
             </Text>
           </View>
         </View>
@@ -45,8 +42,8 @@ function ListScreen() {
         showsVerticalScrollIndicator={false}
         legacyImplementation={false}
         data={data}
-        renderItem={({ item }) => <ListItemNama employees={item} />}
-        keyExtractor={(item) => item.email_work}
+        renderItem={({ item }) => <ListItemNama procedure={item} />}
+        keyExtractor={(item) => item.id}
         style={styles.flatlist}
       />
     </View>
@@ -102,4 +99,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default ListScreen;
+export default Contact;
