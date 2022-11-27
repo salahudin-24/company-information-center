@@ -1,0 +1,48 @@
+{
+    "employees" : [
+        {
+            "pic_url" : "https://avatars.githubusercontent.com/u/56055107?v=4",
+            "email_work" : "salahudin@company.co.id",
+            "name" : "Salahudin Al Ayubi",
+            "division" : "Network Engineering",
+            "phone" : "+6281234567891",
+            "email_personal" : "salahudin@gmail.com",
+            "address" : "Semarang, Indonesia"
+        },
+        {
+            "pic_url" : "https://cdn0-production-images-kly.akamaized.net/9YxawOsx5FNn5ds-ucNgTLKkk1s=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2269080/original/067256100_1530709135-John_Lennon.jpg",
+            "name" : "John Doe",
+            "division" : "Software Engineering",
+            "phone" : "+144918569423",
+            "email_personal" : "doe@gmail.com",
+            "email_work" : "johndoe@company.co.id",
+            "address" : "San Diego, California"
+        },
+        {
+            "pic_url" : "https://akcdn.detik.net.id/api/wm/2020/11/20/putri-diana-di-australia_169.jpeg",
+            "name" : "Putri Diana",
+            "division" : "Human Capital",
+            "phone" : "+6214423434423",
+            "email_personal" : "diana@gmail.com",
+            "email_work" : "putridiana@company.co.id",
+            "address" : "Jakarta, Indonesia"
+        },
+        {
+            "pic_url" : "data:image/jpeg;base64,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",
+            "name" : "John Clark",
+            "division" : "Marketing",
+            "phone" : "+628120912521",
+            "email_personal" : "clark@gmail.com",
+            "email_work" : "clark@company.co.id",
+            "address" : "Paris, France"
+        },
+        {   "pic_url" : "https://confettiskies.com/wp-content/uploads/2020/11/cee460d150f62303b281dde2a32bcc3c.jpg",
+            "name" : "Xia Dre",
+            "division" : "Marketing",
+            "phone" : "+242187492815",
+            "email_personal" : "dre@gmail.com",
+            "email_work" : "xiadre@company.co.id",
+            "address" : "Hongkong, China"
+        }
+    ]
+}

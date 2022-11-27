@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "company-contact-center",
-    "slug": "company-contact-center",
+    "name": "company-information-center",
+    "slug": "company-information-center",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

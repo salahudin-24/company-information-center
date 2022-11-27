@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import ListScreen from "./pages/ListScreen";
+import AboutScreen from "./pages/AboutScreen";
+import DetailScreen from "./pages/DetailScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+
+import "react-native-gesture-handler";
+
+
+const BottomTab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <BottomTab.Navigator>
+        <BottomTab.Screen name="List" component={ListScreen} />
+        <BottomTab.Screen name="About" component={AboutScreen} />
+        <BottomTab.Screen name="Detail" component={DetailScreen} options={{ tabBarButton: () => null }}/>
+      </BottomTab.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
