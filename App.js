@@ -20,14 +20,14 @@ export default function App() {
             initialRouteName="Home"
             screenOptions={({ route }) => ({
               headerShown: true,
-              tabBarShowLabel: false,
+              tabBarShowLabel: true,
               tabBarStyle: {
                 position: "absolute",
                 backgroundColor: "white",
-                height: 80,
+                height: 60,
                 bottom: 10,
                 marginHorizontal: 20,
-                borderRadius: 20,
+                borderRadius: 50,
               },
               tabBarIcon: ({ focused, color, size }) => {
                 let iconName;
