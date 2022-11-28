@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10
   },
   ItemListContainer: {
-    height: 100,
+    height: 70,
     backgroundColor: colors.primary,
     marginVertical: 5,
     borderRadius: 10,
