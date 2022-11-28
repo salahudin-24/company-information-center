@@ -3,7 +3,7 @@ import { View, Text, Image, FlatList, StyleSheet, TouchableNativeFeedback } from
 import { useNavigation } from "@react-navigation/native";
 import colors from "../config/colors";
 
-const url = "http://192.168.198.188:3000/procedures";
+const url = "http://192.168.100.186:3000/procedures";
 
 function Contact() {
     const [data, setData] = useState([]);
@@ -54,21 +54,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor : colors.background
-  },
-  headerContainer: {
-    backgroundColor: "#1363DF",
-    borderBottomLeftRadius: 20,
-    borderBottomRightRadius: 15,
-    alignItems: "center",
-    paddingBottom: 10
-  },
-  headerImage: {
-    height: 120,
-    width: 100
-  },
-  headerText: {
-    color: "#fff",
-    fontWeight: "bold"
   },
   flatlist: {
     flex: 1,
