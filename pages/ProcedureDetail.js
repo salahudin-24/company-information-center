@@ -6,7 +6,7 @@ import colors from "../config/colors";
 function ContactDetail() {
     const [data, setData] = useState([]);
     const route = useRoute();
-    const url = "http://192.168.253.188:3000/procedures?id="+route.params.procedure_id;
+    const url = "http://52.253.96.50:5328/procedures?id="+route.params.procedure_id;
     
  
     useEffect(() => {
