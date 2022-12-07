@@ -6,7 +6,7 @@ import colors from "../config/colors";
 function ContactDetail() {
     const [data, setData] = useState([]);
     const route = useRoute();
-    const url = "http://192.168.100.186:3000/employees?email_work="+route.params.email_work;
+    const url = "http://192.168.253.188:3000/employees?email_work="+route.params.email_work;
     
  
     useEffect(() => {
