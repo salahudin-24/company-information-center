@@ -3,7 +3,7 @@ import { View, Text, Image, FlatList, StyleSheet, TouchableNativeFeedback } from
 import { useNavigation } from "@react-navigation/native";
 import colors from "../config/colors";
 
-const url = "http://192.168.253.188:3000/procedures";
+const url = "http://192.168.86.188:3000/procedures";
 
 function Contact() {
     const [data, setData] = useState([]);
